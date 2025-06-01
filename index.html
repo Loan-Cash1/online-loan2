@@ -157,14 +157,14 @@
     function handleLogin() {
       const nic = document.getElementById("nic").value.trim();
       const phone = document.getElementById("phone").value.trim();
-      const successDiv = document.getElementById("success");
 
       if (phone.length !== 10 || isNaN(phone)) {
         alert("කරුණාකර වලංගු දුරකථන අංකයක් (අංක 10ක්) ඇතුලත් කරන්න.");
         return;
       }
 
-      successDiv.style.display = "block";
+      // Redirect to Google Form
+      window.location.href = "https://forms.gle/YRt47TR2U3xB9RAi8";
     }
   </script>
 </body>
